@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<script>
+    var n = +prompt("Informe o número de termos da sequência:")
+    document.write ("Série de Fibonacci com " + n + " termos <br>");
+    var n1 = 0;
+    document.write(n1 + "<br>");
+    var n2 = 1;
+    document.write(n2 + "<br>");
+    var n3;
+
+    for (i=3;i<=n;i++){
+        n3 = n1 + n2;
+        document.write(n3 + "<br>");
+        n1 = n2;
+        n2 = n3;
+    }
+</script>

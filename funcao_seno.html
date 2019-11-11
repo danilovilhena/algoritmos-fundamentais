@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<script>
+	function fatorial(n){
+        var fat = 1;
+        for(var i = n; i>=1; i--){
+            fat *= i;
+        }
+        return fat;
+    }
+	
+	var n = +prompt("Infome o número de termos da sequência:");
+	var x = +prompt("Informe o valor de x:");
+	
+	var acumulador = 0;
+	var termo;
+	var j = 1;
+	var sinal = 1;
+	
+	for(var i=1;i<=n;i++){
+		termo = Math.pow(x,j) / fatorial(j);
+		acumulador += sinal*termo;
+		sinal *= -1
+		j=j+2;
+	}
+	
+	document.write("O resultado é: " + acumulador);
+</script>

@@ -1,0 +1,12 @@
+<meta charset="utf-8">
+<script>
+    var numAlunos = +prompt("Informe a quantidade de alunos:");
+    var contador = 0;
+    for (var i=0;i<numAlunos;i++){
+        var nota = +prompt ("Informe a nota do aluno " + (i+1) +" (0-100):");
+        if (nota>50){
+            contador++
+        }
+    }
+    document.write("A quantidade de alunos que passaram no teste é de: " + contador + " alunos.");
+</script>

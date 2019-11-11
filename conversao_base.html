@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<script>
+    var num = +prompt("Informe o número que deseja converter de base:");
+    var resto = [];
+    var i = 0;
+    document.write("Número na base decimal: " + num + "<br>");
+    while (num>0){
+        resto[i]=num%2;
+        i++;
+        num = Math.floor(num/2);
+    }
+    document.write("Número na base binária: ");
+    for (i = resto.length-1; i >=0; i--) {
+    document.write(resto[i]);
+}
+</script>

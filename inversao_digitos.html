@@ -1,0 +1,12 @@
+<meta charset="utf-8">
+<script>
+    var num = +prompt("Insira o número que deseja inverter os dígitos: ");
+    var invertido=0;
+    document.write("O número digitado foi: " + num);
+    while (num>0){
+        resto = num % 10;
+        invertido = invertido*10 + resto;
+        num = Math.floor(num/10);
+    }
+    document.write("<br>O número invertido é: " + invertido);
+</script>
