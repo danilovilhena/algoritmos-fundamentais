@@ -1,0 +1,13 @@
+<meta charset='utf-8'>
+<script>
+let array = [7, 3, 5, 1, 8, 2, 4, 8];
+let aux;
+
+for (let i = 1; i < array.length/2; i++){
+    aux = array[i-1];
+    array[i-1] = array[array.length-i];
+    array[array.length-i] = aux;
+}
+
+console.log(array);
+</script>
