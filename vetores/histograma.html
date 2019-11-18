@@ -1,0 +1,18 @@
+<meta charset = 'utf-8'>
+<script>
+    let array = [];
+    let nota;
+    let numNotas = +prompt('Informe a quantidade de notas: ');  
+    for (let i = 0; i<=100; i++){
+        array[i] = 0;
+    }
+    for (let i = 01; i <= numNotas; i++){
+        nota = +prompt('Informe a nota (0-100) do aluno ' + i + ': ');
+        array[nota]++;
+    }
+    for (let i = 0; i<=100; i++){
+        if (array[i]!== 0){
+            document.write('A nota ' + i + ' ocorreu: ' + array[i] + ' vezes. <br>')
+        };
+    }
+</script>
