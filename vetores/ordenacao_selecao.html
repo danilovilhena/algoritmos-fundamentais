@@ -1,0 +1,18 @@
+<script>
+    let array = [20,35,18,8,14,41,3,39];
+    let menor;
+    let posicao;
+
+    for (let i = 0; i < array.length; i++){
+        menor = array[i];
+        posicao = i;
+        for (let j = i+1; j < array.length; j++) {
+            if (array[j] < menor) {
+                menor = array[j];
+                posicao = j;
+            }
+        }
+        array[posicao] = array[i];
+        array[i] = menor;
+    }
+</script>
