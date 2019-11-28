@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<script>
+  let array = [10, 12, 20, 23, 27, 30, 31, 39, 42, 44, 45, 49, 57, 63, 70];
+  let num = +prompt('Digite um número para verificar se está no array:');
+
+  let inicio = 0;
+  let metade;
+  let fim = array.length - 1;
+
+  while (inicio <= fim) {
+    metade = Math.floor((inicio + fim) / 2);
+    if (num == array[metade]) {
+      break;
+    }
+    if (num > array[metade]) {
+      inicio = metade + 1;
+    }
+    if (num < array[metade]) {
+      fim = metade - 1;
+    }
+  }
+  if (num == array[metade]) {
+    document.write('O número ' + num + ' está presente no array na posição: ' + metade);
+  }
+  else {
+    document.write('O número ' + num + ' não está presente no array');
+  }
+</script>
